@@ -23,10 +23,14 @@ python test.py
 ```
 
 4.1 Obtain id docker
+```
 docker ps
-
+docker inspect -f   '{{.Id}}' d8e703d7e303
+```
 4.2 Copy files to docker
+```
 docker cp file.txt container-id:/home
+```
 
 5. docker images
 
